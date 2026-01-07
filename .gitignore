@@ -36,3 +36,8 @@ logs/
 secrets/
 credentials/
 keys/
+
+#zip
+*.zip
+backend/*deploy*.zip
+frontend/*deploy*.zip
