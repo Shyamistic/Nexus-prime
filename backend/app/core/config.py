@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     SECRET_KEY: Optional[str] = None
     JWT_SECRET_KEY: Optional[str] = None
     JWT_ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 43200 # 30 days
-    REFRESH_TOKEN_EXPIRE_DAYS: int = 60
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30 # 30 minutes
+    REFRESH_TOKEN_EXPIRE_DAYS: int = 14
     
     # AI & DB Keys (Keep your existing ones)
     AZURE_OPENAI_ENDPOINT: Optional[str] = None
