@@ -1,7 +1,15 @@
 import axios from 'axios';
 
+// --- CONFIGURATION ---
+// Determine the API URL based on the environment
+export const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : 'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io');
+
+// 1. Configure global axios defaults (for AuthContext and other direct usages)
+axios.defaults.baseURL = API_URL;
+
+// 2. Create specific instance for data services
 const api = axios.create({
-  baseURL: '/api/v1'
+  baseURL: `${API_URL}/api/v1`
 });
 
 export interface Incident {

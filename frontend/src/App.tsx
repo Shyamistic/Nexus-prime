@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getIncidents, type Incident } from './services/api';
+import { getIncidents, type Incident, API_URL } from './services/api';
 import { AlertCircle, CheckCircle, Activity, Server, ShieldCheck, BarChart3 } from 'lucide-react';
 import { useState } from 'react';
 import { ActionPanel } from './components/ActionPanel';
@@ -9,13 +9,6 @@ import Dashboard from './components/Dashboard';
 import { LoginForm } from './components/LoginForm';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import axios from 'axios';
-
-// Configure API URL based on environment:
-// 1. VITE_API_URL from .env takes precedence.
-// 2. In Development, default to localhost.
-// 3. In Production, default to the deployed Azure backend.
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : 'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io');
-axios.defaults.baseURL = API_URL;
 
 interface Action {
   id: string;
