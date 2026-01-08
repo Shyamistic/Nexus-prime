@@ -4,6 +4,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { AlertTriangle, CheckCircle, Clock, TrendingUp, Activity, Zap, Shield, Users, Server, Wifi, X, Brain, Target, BarChart3, Globe, Smartphone, Bell } from 'lucide-react';
 import EnterpriseFeatures from './EnterpriseFeatures';
+import { API_URL } from '../services/api';
+import api from '../services/api';
 
 interface IncidentMetrics {
   total_incidents: number;
@@ -72,11 +74,11 @@ const Dashboard: React.FC = () => {
   
   // Mock WebSocket state
   const isConnected = false;
-  const connectionStatus = 'disconnected';
+  const connectionStatus: string = 'disconnected';
   const wsIncidents: any[] = [];
   const wsMetrics = null;
   const systemAlerts: any[] = [];
-  const clearAlert = () => {};
+  const clearAlert = (id: any) => {};
   const setWsIncidents = () => {};
   const setWsMetrics = () => {};
 
@@ -115,7 +117,7 @@ const Dashboard: React.FC = () => {
 
   const executeRemediation = async (incidentId: string) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/incidents/${incidentId}/execute-remediation`, {
+      const response = await fetch(`${API_URL}/api/v1/incidents/${incidentId}/execute-remediation`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -141,88 +143,84 @@ const Dashboard: React.FC = () => {
   };
 
   const fetchDashboardData = async () => {
-    try {
-      // Use direct incidents endpoint since dashboard endpoints have issues
-      const incidentsRes = await fetch('http://localhost:8000/api/v1/incidents/');
+  try {
+    // Use the shared api instance (already configured with Azure backend)
+    const incidentsRes = await api.get('/incidents/');
+    const incidentsData = incidentsRes.data;
+    
+    if (Array.isArray(incidentsData)) {
+      // Format incidents for display
+      const formattedIncidents = incidentsData.map(inc => ({
+        id: inc.id,
+        title: inc.title,
+        severity: inc.severity,
+        status: inc.status,
+        created_at: inc.created_at,
+        source: inc.source || 'generic',
+        ai_confidence: inc.confidence || inc.ai_confidence,
+        ai_summary: inc.root_cause || inc.summary || (inc.status === 'OPEN' ? 'AI analysis in progress...' : 'Analysis completed'),
+        remediation_steps: inc.recommended_actions || inc.remediation_steps || (inc.status !== 'OPEN' ? ['Review system metrics', 'Apply recommended fixes', 'Monitor system performance'] : []),
+        impact_scope: inc.impact_scope,
+        affected_users: inc.affected_users,
+        business_impact: inc.business_impact,
+        human_approved: inc.human_approved,
+        approved_by: inc.approved_by,
+        resolution_method: inc.resolution_method
+      }));
       
-      if (incidentsRes.ok) {
-        const incidentsData = await incidentsRes.json();
-        
-        // Format incidents for display with better RCA handling
-        const formattedIncidents = incidentsData.map(inc => ({
-          id: inc.id,
-          title: inc.title,
-          severity: inc.severity,
-          status: inc.status,
-          created_at: inc.created_at,
-          source: inc.source || 'generic',
-          ai_confidence: inc.confidence || inc.ai_confidence,
-          ai_summary: inc.root_cause || inc.summary || (inc.status === 'OPEN' ? 'AI analysis in progress...' : 'Analysis completed'),
-          remediation_steps: inc.recommended_actions || inc.remediation_steps || (inc.status !== 'OPEN' ? ['Review system metrics', 'Apply recommended fixes', 'Monitor system performance'] : []),
-          impact_scope: inc.impact_scope,
-          affected_users: inc.affected_users,
-          business_impact: inc.business_impact,
-          human_approved: inc.human_approved,
-          approved_by: inc.approved_by,
-          resolution_method: inc.resolution_method
-        }));
-        
-        setRecentIncidents(formattedIncidents.slice(0, 20).sort((a, b) => new Date(b.created_at) - new Date(a.created_at)));
-        
-        // Calculate real metrics from incidents
-        const total = formattedIncidents.length;
-        const open = formattedIncidents.filter(i => i.status === 'OPEN').length;
-        const investigating = formattedIncidents.filter(i => i.status === 'INVESTIGATING').length;
-        const mitigated = formattedIncidents.filter(i => i.status === 'MITIGATED').length;
-        const resolved = formattedIncidents.filter(i => i.status === 'RESOLVED').length;
-        
-        setMetrics({
-          total_incidents: total,
-          open_incidents: open,
-          investigating_incidents: investigating,
-          mitigated_incidents: mitigated,
-          resolved_incidents: resolved,
-          avg_resolution_time_hours: 1.8,
-          mttr_hours: 1.2,
-          incidents_by_severity: {
-            'SEV1': formattedIncidents.filter(i => i.severity === 'critical' || i.severity === 'SEV1').length,
-            'SEV2': formattedIncidents.filter(i => i.severity === 'high' || i.severity === 'SEV2').length,
-            'SEV3': formattedIncidents.filter(i => i.severity === 'medium' || i.severity === 'SEV3').length,
-            'SEV4': formattedIncidents.filter(i => i.severity === 'low' || i.severity === 'SEV4').length
-          },
-          incidents_by_source: {
-            'datadog': formattedIncidents.filter(i => i.source === 'datadog').length,
-            'prometheus': formattedIncidents.filter(i => i.source === 'prometheus').length,
-            'pagerduty': formattedIncidents.filter(i => i.source === 'pagerduty').length,
-            'generic': formattedIncidents.filter(i => i.source === 'generic').length
-          },
-          trend_data: [],
-          performance_metrics: {
-            avg_detection_time_seconds: 4.2,
-            avg_analysis_time_seconds: 6.1,
-            ai_accuracy_percentage: 94.7,
-            automation_rate_percentage: 87.3
-          },
-          ai_metrics: {
-            total_analyses: total,
-            avg_confidence: 0.94,
-            successful_predictions: Math.floor(total * 0.94),
-            model_performance: 'Excellent'
-          }
-        });
-        
-        setSystemStatus('ONLINE');
-      } else {
-        console.error('Failed to fetch incidents');
-        setSystemStatus('DEGRADED');
-      }
-    } catch (error) {
-      console.error('Failed to fetch dashboard data:', error);
-      setSystemStatus('DEGRADED');
-    } finally {
-      setLoading(false);
+      setRecentIncidents(formattedIncidents.slice(0, 20).sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()));
+      
+      const total = formattedIncidents.length;
+      const open = formattedIncidents.filter(i => i.status === 'OPEN').length;
+      const investigating = formattedIncidents.filter(i => i.status === 'INVESTIGATING').length;
+      const mitigated = formattedIncidents.filter(i => i.status === 'MITIGATED').length;
+      const resolved = formattedIncidents.filter(i => i.status === 'RESOLVED').length;
+      
+      setMetrics({
+        total_incidents: total,
+        open_incidents: open,
+        investigating_incidents: investigating,
+        mitigated_incidents: mitigated,
+        resolved_incidents: resolved,
+        avg_resolution_time_hours: 1.8,
+        mttr_hours: 1.2,
+        incidents_by_severity: {
+          'SEV1': formattedIncidents.filter(i => i.severity === 'critical' || i.severity === 'SEV1').length,
+          'SEV2': formattedIncidents.filter(i => i.severity === 'high' || i.severity === 'SEV2').length,
+          'SEV3': formattedIncidents.filter(i => i.severity === 'medium' || i.severity === 'SEV3').length,
+          'SEV4': formattedIncidents.filter(i => i.severity === 'low' || i.severity === 'SEV4').length
+        },
+        incidents_by_source: {
+          'datadog': formattedIncidents.filter(i => i.source === 'datadog').length,
+          'prometheus': formattedIncidents.filter(i => i.source === 'prometheus').length,
+          'pagerduty': formattedIncidents.filter(i => i.source === 'pagerduty').length,
+          'generic': formattedIncidents.filter(i => i.source === 'generic').length
+        },
+        trend_data: [],
+        performance_metrics: {
+          avg_detection_time_seconds: 4.2,
+          avg_analysis_time_seconds: 6.1,
+          ai_accuracy_percentage: 94.7,
+          automation_rate_percentage: 87.3
+        },
+        ai_metrics: {
+          total_analyses: total,
+          avg_confidence: 0.94,
+          successful_predictions: Math.floor(total * 0.94),
+          model_performance: 'Excellent'
+        }
+      });
+      
+      setSystemStatus('ONLINE');
     }
-  };
+  } catch (error) {
+    console.error('Failed to fetch dashboard data:', error);
+    setSystemStatus('DEGRADED');
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const getSeverityColor = (severity: string) => {
     const colors = {
