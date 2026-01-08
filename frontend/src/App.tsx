@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getIncidents, type Incident } from './services/api';
+import { getIncidents, type Incident, API_URL } from './services/api';
 import { AlertCircle, CheckCircle, Activity, Server, ShieldCheck, BarChart3 } from 'lucide-react';
 import { useState } from 'react';
 import { ActionPanel } from './components/ActionPanel';
@@ -9,6 +9,7 @@ import Dashboard from './components/Dashboard';
 import { LoginForm } from './components/LoginForm';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import axios from 'axios';
+
 interface Action {
   id: string;
   title: string;

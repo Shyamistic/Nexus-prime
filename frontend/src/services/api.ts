@@ -2,7 +2,13 @@ import axios from 'axios';
 
 // --- CONFIGURATION ---
 // Determine the API URL based on the environment
-export const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : 'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io');
+// FIX: Prioritize the Azure URL in production, even if a local .env file exists
+const isProd = import.meta.env.PROD;
+const envUrl = import.meta.env.VITE_API_URL;
+// If in PROD and envUrl is localhost, ignore it to prevent CORS errors
+const safeUrl = (isProd && envUrl?.includes('localhost')) ? undefined : envUrl;
+
+export const API_URL = safeUrl || (isProd ? 'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io' : 'http://localhost:8000');
 
 // 1. Configure global axios defaults (for AuthContext and other direct usages)
 axios.defaults.baseURL = API_URL;
