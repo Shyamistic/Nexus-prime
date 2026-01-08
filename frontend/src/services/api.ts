@@ -1,22 +1,40 @@
+/// <reference types="vite/client" />
 import axios from 'axios';
 
-// --- CONFIGURATION ---
-// Determine the API URL based on the environment
-// FIX: Prioritize the Azure URL in production, even if a local .env file exists
+// Determine API URL - Azure in production, localhost in dev
 const isProd = import.meta.env.PROD;
-const envUrl = import.meta.env.VITE_API_URL;
-// If in PROD and envUrl is localhost, ignore it to prevent CORS errors
-const safeUrl = (isProd && envUrl?.includes('localhost')) ? undefined : envUrl;
 
-export const API_URL = safeUrl || (isProd ? 'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io' : 'http://localhost:8000');
+// HARDCODE Azure URL for production to ensure it's always used
+let API_URL: string;
 
-// 1. Configure global axios defaults (for AuthContext and other direct usages)
+if (isProd) {
+  // Production: always use Azure backend
+  API_URL = 'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io';
+  console.log('🌐 PRODUCTION: Using Azure backend:', API_URL);
+} else {
+  // Development: use localhost
+  API_URL = 'http://127.0.0.1:8000';
+  console.log('🔧 DEVELOPMENT: Using local backend:', API_URL);
+}
+
+// Configure global axios defaults
 axios.defaults.baseURL = API_URL;
 
-// 2. Create specific instance for data services
+// Create API instance with /api/v1 prefix
 const api = axios.create({
   baseURL: `${API_URL}/api/v1`
 });
+
+// Add request interceptor to include token
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+export { API_URL, api as default };
 
 export interface Incident {
   id: string;
