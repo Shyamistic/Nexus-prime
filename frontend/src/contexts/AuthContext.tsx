@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import api, { API_URL } from '../services/api';
 import axios from 'axios';
 
 interface User {
@@ -36,6 +37,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     if (token) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       fetchUser();
     } else {
       setLoading(false);
@@ -44,18 +46,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const fetchUser = async () => {
     try {
-      // For demo purposes, use mock user data since /me endpoint may not exist
+      // Try to fetch real user data from /me endpoint
+      const response = await api.get('/auth/me');
+      setUser(response.data);
+    } catch (error) {
+      console.error('Failed to fetch user:', error);
+      // For demo purposes, use mock user data
       const mockUser = {
         id: 'demo_user_id',
-        email: 'judge@imaginecup.com',
-        full_name: 'Demo Judge',
+        email: 'judge@nexus.local',
+        full_name: 'Imagine Cup Judge',
         role: 'admin',
         tenant_id: 'demo_tenant'
       };
       setUser(mockUser);
-    } catch (error) {
-      console.error('Failed to fetch user:', error);
-      logout();
     } finally {
       setLoading(false);
     }
@@ -63,26 +67,46 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const login = async (email: string, password: string): Promise<boolean> => {
     try {
-      const response = await axios.post('http://localhost:8000/api/v1/auth/login', { email, password });
-      const { access_token, user: userData } = response.data;
+      console.log('🔐 Attempting login to:', `${API_URL}/api/v1/auth/login`);
       
+      // Use the shared api instance which points to the correct backend
+      const response = await api.post('auth/login', { 
+        email, 
+        password 
+      });
+
+      const { access_token, user: userData } = response.data;
+
+      console.log('✅ Login successful:', userData);
+      
+      // Store token
       setToken(access_token);
-      setUser(userData);
       localStorage.setItem('token', access_token);
+      
+      // Update all axios instances with the token
       axios.defaults.headers.common['Authorization'] = `Bearer ${access_token}`;
+      api.defaults.headers.common['Authorization'] = `Bearer ${access_token}`;
+      
+      // Set user data
+      setUser(userData);
       
       return true;
-    } catch (error) {
-      console.error('Login failed:', error);
+    } catch (error: any) {
+      console.error('❌ Login failed:', error.response?.data || error.message);
+      setUser(null);
+      setToken(null);
+      localStorage.removeItem('token');
       return false;
     }
   };
 
   const logout = () => {
+    console.log('🚪 Logging out');
     setUser(null);
     setToken(null);
     localStorage.removeItem('token');
     delete axios.defaults.headers.common['Authorization'];
+    delete api.defaults.headers.common['Authorization'];
   };
 
   const value = {
