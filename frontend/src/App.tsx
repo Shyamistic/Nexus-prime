@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { getIncidents, type Incident, API_URL } from './services/api';
+import api from './services/api';
 import { AlertCircle, CheckCircle, Activity, Server, ShieldCheck, BarChart3 } from 'lucide-react';
 import { useState } from 'react';
 import { ActionPanel } from './components/ActionPanel';
@@ -19,7 +20,7 @@ interface Action {
 
 // Fetch actions for a specific incident
 const getActions = async (incidentId: string): Promise<Action[]> => {
-  const res = await axios.get(`/api/v1/incidents/${incidentId}/actions`);
+  const res = await api.get<Action[]>(`incidents/${incidentId}/actions`);
   return res.data;
 };
 
@@ -55,7 +56,7 @@ function AppContent() {
   // Also refetch the selected incident details more frequently
   const { data: selectedIncidentDetails } = useQuery({
     queryKey: ['incident', selectedId],
-    queryFn: () => axios.get(`/api/v1/incidents/${selectedId}`).then(res => res.data),
+    queryFn: () => api.get<Incident>(`incidents/${selectedId}`).then(res => res.data),
     enabled: !!selectedId && isAuthenticated,
     refetchInterval: 2000,
     refetchIntervalInBackground: true,

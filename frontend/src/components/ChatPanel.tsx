@@ -26,27 +26,32 @@ export function ChatPanel({ incidentId }: ChatPanelProps) {
 
   useEffect(scrollToBottom, [messages, isOpen]);
 
-  const handleSend = async () => {
-    if (!input.trim()) return;
+ const handleSend = async () => {
+  if (!input.trim()) return;
 
-    const userMsg = input;
-    setInput('');
-    setMessages(prev => [...prev, { role: 'user', text: userMsg }]);
-    setIsLoading(true);
+  const userMsg = input;
+  setInput('');
+  setMessages(prev => [...prev, { role: 'user', text: userMsg }]);
+  setIsLoading(true);
 
-    try {
-      const res = await axios.post('/api/v1/chat/', {
+  try {
+    const res = await axios.post(
+      'https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io/api/v1/chat/',
+      {
         incident_id: incidentId,
         message: userMsg
-      });
-      
-      setMessages(prev => [...prev, { role: 'assistant', text: res.data.response }]);
-    } catch (error) {
-      setMessages(prev => [...prev, { role: 'assistant', text: "Connection error. Unable to reach NEXUS Core." }]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+      }
+    );
+    
+    setMessages(prev => [...prev, { role: 'assistant', text: res.data.response }]);
+  } catch (error) {
+    console.error('Chat error:', error);
+    setMessages(prev => [...prev, { role: 'assistant', text: "Connection error. Unable to reach NEXUS Core." }]);
+  } finally {
+    setIsLoading(false);
+  }
+};
+
 
   if (!isOpen) {
     return (
