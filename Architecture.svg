@@ -1,0 +1,482 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2979pt" height="1782pt" viewBox="0.00 0.00 2979.00 1782.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(43.2 1739.06)">
+<title>G</title>
+<polygon fill="#0c1e2e" stroke="none" points="-43.2,43.2 -43.2,-1739.06 2935.36,-1739.06 2935.36,43.2 -43.2,43.2"/>
+<g id="clust3" class="cluster">
+<title>cluster_ingest</title>
+<path fill="#0c1e2e" stroke="#51cf66" stroke-dasharray="5,2" d="M1077.87,-682.16C1077.87,-682.16 1797.76,-682.16 1797.76,-682.16 1803.76,-682.16 1809.76,-688.16 1809.76,-694.16 1809.76,-694.16 1809.76,-799.16 1809.76,-799.16 1809.76,-805.16 1803.76,-811.16 1797.76,-811.16 1797.76,-811.16 1077.87,-811.16 1077.87,-811.16 1071.87,-811.16 1065.87,-805.16 1065.87,-799.16 1065.87,-799.16 1065.87,-694.16 1065.87,-694.16 1065.87,-688.16 1071.87,-682.16 1077.87,-682.16"/>
+<text xml:space="preserve" text-anchor="middle" x="1437.82" y="-790.96" font-family="Segoe UI" font-size="18.00" fill="#e0e0e0">Event Ingestion &amp; Normalization</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_ai</title>
+<path fill="#0c1e2e" stroke="#00d4ff" stroke-width="3" stroke-dasharray="5,2" d="M1243.87,-819.16C1243.87,-819.16 1515.76,-819.16 1515.76,-819.16 1521.76,-819.16 1527.76,-825.16 1527.76,-831.16 1527.76,-831.16 1527.76,-1162.16 1527.76,-1162.16 1527.76,-1168.16 1521.76,-1174.16 1515.76,-1174.16 1515.76,-1174.16 1243.87,-1174.16 1243.87,-1174.16 1237.87,-1174.16 1231.87,-1168.16 1231.87,-1162.16 1231.87,-1162.16 1231.87,-831.16 1231.87,-831.16 1231.87,-825.16 1237.87,-819.16 1243.87,-819.16"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.82" y="-1153.96" font-family="Segoe UI" font-size="18.00" fill="#e0e0e0">Azure AI Services – Core Intelligence</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_orch</title>
+<path fill="#0c1e2e" stroke="#ffd43b" stroke-dasharray="5,2" d="M1705.76,-819.16C1705.76,-819.16 2598.16,-819.16 2598.16,-819.16 2604.16,-819.16 2610.16,-825.16 2610.16,-831.16 2610.16,-831.16 2610.16,-917.16 2610.16,-917.16 2610.16,-923.16 2604.16,-929.16 2598.16,-929.16 2598.16,-929.16 1705.76,-929.16 1705.76,-929.16 1699.76,-929.16 1693.76,-923.16 1693.76,-917.16 1693.76,-917.16 1693.76,-831.16 1693.76,-831.16 1693.76,-825.16 1699.76,-819.16 1705.76,-819.16"/>
+<text xml:space="preserve" text-anchor="middle" x="2151.96" y="-908.96" font-family="Segoe UI" font-size="18.00" fill="#e0e0e0">Incident Orchestration Engine</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_exec</title>
+<path fill="#0c1e2e" stroke="#ff6b6b" stroke-dasharray="5,2" d="M1976.16,-72.16C1976.16,-72.16 2872.16,-72.16 2872.16,-72.16 2878.16,-72.16 2884.16,-78.16 2884.16,-84.16 2884.16,-84.16 2884.16,-189.16 2884.16,-189.16 2884.16,-195.16 2878.16,-201.16 2872.16,-201.16 2872.16,-201.16 1976.16,-201.16 1976.16,-201.16 1970.16,-201.16 1964.16,-195.16 1964.16,-189.16 1964.16,-189.16 1964.16,-84.16 1964.16,-84.16 1964.16,-78.16 1970.16,-72.16 1976.16,-72.16"/>
+<text xml:space="preserve" text-anchor="middle" x="2424.16" y="-180.96" font-family="Segoe UI" font-size="18.00" fill="#e0e0e0">Action Execution &amp; Approval</text>
+</g>
+<!-- title -->
+<g id="node1" class="node">
+<title>title</title>
+<path fill="lightgrey" stroke="none" d="M658.8,-794.32C658.8,-794.32 12,-794.32 12,-794.32 6,-794.32 0,-788.32 0,-782.32 0,-782.32 0,-718 0,-718 0,-712 6,-706 12,-706 12,-706 658.8,-706 658.8,-706 664.8,-706 670.8,-712 670.8,-718 670.8,-718 670.8,-782.32 670.8,-782.32 670.8,-788.32 664.8,-794.32 658.8,-794.32"/>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-757.96" font-family="Segoe UI" font-size="26.00" fill="#00d4ff">NEXUS PRIME – Autonomous Incident Response Platform</text>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-726.76" font-family="Segoe UI" font-size="26.00" fill="#00d4ff">System Architecture on Microsoft Azure</text>
+</g>
+<!-- datadog -->
+<g id="node2" class="node">
+<title>datadog</title>
+<path fill="#10263a" stroke="#0078d4" d="M885.14,-904.32C885.14,-904.32 743.54,-904.32 743.54,-904.32 737.54,-904.32 731.54,-898.32 731.54,-892.32 731.54,-892.32 731.54,-852 731.54,-852 731.54,-846 737.54,-840 743.54,-840 743.54,-840 885.14,-840 885.14,-840 891.14,-840 897.14,-846 897.14,-852 897.14,-852 897.14,-892.32 897.14,-892.32 897.14,-898.32 891.14,-904.32 885.14,-904.32"/>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-876.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Datadog</text>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-857.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Alerts &amp; Metrics</text>
+</g>
+<!-- fastapi -->
+<g id="node6" class="node">
+<title>fastapi</title>
+<path fill="#123027" stroke="#51cf66" d="M1161.87,-773.92C1161.87,-773.92 969.87,-773.92 969.87,-773.92 963.87,-773.92 957.87,-767.92 957.87,-761.92 957.87,-761.92 957.87,-702.4 957.87,-702.4 957.87,-696.4 963.87,-690.4 969.87,-690.4 969.87,-690.4 1161.87,-690.4 1161.87,-690.4 1167.87,-690.4 1173.87,-696.4 1173.87,-702.4 1173.87,-702.4 1173.87,-761.92 1173.87,-761.92 1173.87,-767.92 1167.87,-773.92 1161.87,-773.92"/>
+<text xml:space="preserve" text-anchor="middle" x="1065.87" y="-746.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">FastAPI Webhook Server</text>
+<text xml:space="preserve" text-anchor="middle" x="1065.87" y="-727.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• POST /webhook</text>
+<text xml:space="preserve" text-anchor="middle" x="1065.87" y="-708.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Async, rate‑limited</text>
+</g>
+<!-- datadog&#45;&gt;fastapi -->
+<g id="edge9" class="edge">
+<title>datadog-&gt;fastapi</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M897.49,-872.16C970.84,-872.16 1066.16,-872.16 1066.16,-872.16 1066.16,-872.16 1066.16,-788.28 1066.16,-788.28"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1070.36,-788.28 1066.16,-776.28 1061.96,-788.28 1070.36,-788.28"/>
+</g>
+<!-- pagerduty -->
+<g id="node3" class="node">
+<title>pagerduty</title>
+<path fill="#10263a" stroke="#0078d4" d="M887.21,-811.32C887.21,-811.32 741.47,-811.32 741.47,-811.32 735.47,-811.32 729.47,-805.32 729.47,-799.32 729.47,-799.32 729.47,-759 729.47,-759 729.47,-753 735.47,-747 741.47,-747 741.47,-747 887.21,-747 887.21,-747 893.21,-747 899.21,-753 899.21,-759 899.21,-759 899.21,-799.32 899.21,-799.32 899.21,-805.32 893.21,-811.32 887.21,-811.32"/>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-783.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">PagerDuty</text>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-764.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Incidents &amp; On‑call</text>
+</g>
+<!-- pagerduty&#45;&gt;fastapi -->
+<g id="edge10" class="edge">
+<title>pagerduty-&gt;fastapi</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M899.5,-760.46C899.5,-760.46 943.5,-760.46 943.5,-760.46"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="943.5,-764.66 955.5,-760.46 943.5,-756.26 943.5,-764.66"/>
+</g>
+<!-- prometheus -->
+<g id="node4" class="node">
+<title>prometheus</title>
+<path fill="#10263a" stroke="#0078d4" d="M887.87,-718.32C887.87,-718.32 740.8,-718.32 740.8,-718.32 734.8,-718.32 728.8,-712.32 728.8,-706.32 728.8,-706.32 728.8,-666 728.8,-666 728.8,-660 734.8,-654 740.8,-654 740.8,-654 887.87,-654 887.87,-654 893.87,-654 899.87,-660 899.87,-666 899.87,-666 899.87,-706.32 899.87,-706.32 899.87,-712.32 893.87,-718.32 887.87,-718.32"/>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-690.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Prometheus</text>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-671.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Time‑series Metrics</text>
+</g>
+<!-- prometheus&#45;&gt;fastapi -->
+<g id="edge11" class="edge">
+<title>prometheus-&gt;fastapi</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M900.2,-704.36C900.2,-704.36 943.6,-704.36 943.6,-704.36"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="943.6,-708.56 955.6,-704.36 943.6,-700.16 943.6,-708.56"/>
+</g>
+<!-- cloudwatch -->
+<g id="node5" class="node">
+<title>cloudwatch</title>
+<path fill="#10263a" stroke="#0078d4" d="M885.14,-625.32C885.14,-625.32 743.54,-625.32 743.54,-625.32 737.54,-625.32 731.54,-619.32 731.54,-613.32 731.54,-613.32 731.54,-573 731.54,-573 731.54,-567 737.54,-561 743.54,-561 743.54,-561 885.14,-561 885.14,-561 891.14,-561 897.14,-567 897.14,-573 897.14,-573 897.14,-613.32 897.14,-613.32 897.14,-619.32 891.14,-625.32 885.14,-625.32"/>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-597.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">AWS CloudWatch</text>
+<text xml:space="preserve" text-anchor="middle" x="814.34" y="-578.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Logs &amp; Alarms</text>
+</g>
+<!-- cloudwatch&#45;&gt;fastapi -->
+<g id="edge12" class="edge">
+<title>cloudwatch-&gt;fastapi</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M897.49,-593.16C970.84,-593.16 1066.16,-593.16 1066.16,-593.16 1066.16,-593.16 1066.16,-675.96 1066.16,-675.96"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1061.96,-675.96 1066.16,-687.96 1070.36,-675.96 1061.96,-675.96"/>
+</g>
+<!-- normalize -->
+<g id="node7" class="node">
+<title>normalize</title>
+<path fill="#123027" stroke="#51cf66" d="M1475.32,-773.92C1475.32,-773.92 1283.32,-773.92 1283.32,-773.92 1277.32,-773.92 1271.32,-767.92 1271.32,-761.92 1271.32,-761.92 1271.32,-702.4 1271.32,-702.4 1271.32,-696.4 1277.32,-690.4 1283.32,-690.4 1283.32,-690.4 1475.32,-690.4 1475.32,-690.4 1481.32,-690.4 1487.32,-696.4 1487.32,-702.4 1487.32,-702.4 1487.32,-761.92 1487.32,-761.92 1487.32,-767.92 1481.32,-773.92 1475.32,-773.92"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-746.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Event Normalization</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-727.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Unified schema</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-708.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Metadata enrichment</text>
+</g>
+<!-- fastapi&#45;&gt;normalize -->
+<g id="edge1" class="edge">
+<title>fastapi-&gt;normalize</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1174.18,-746.08C1174.18,-746.08 1256.89,-746.08 1256.89,-746.08"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1256.89,-750.28 1268.89,-746.08 1256.89,-741.88 1256.89,-750.28"/>
+</g>
+<!-- fastapi&#45;&gt;normalize -->
+<g id="edge13" class="edge">
+<title>fastapi-&gt;normalize</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1174.18,-718.24C1174.18,-718.24 1256.89,-718.24 1256.89,-718.24"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1256.89,-722.44 1268.89,-718.24 1256.89,-714.04 1256.89,-722.44"/>
+</g>
+<!-- mq -->
+<g id="node8" class="node">
+<title>mq</title>
+<path fill="#123027" stroke="#51cf66" d="M1789.76,-773.92C1789.76,-773.92 1597.76,-773.92 1597.76,-773.92 1591.76,-773.92 1585.76,-767.92 1585.76,-761.92 1585.76,-761.92 1585.76,-702.4 1585.76,-702.4 1585.76,-696.4 1591.76,-690.4 1597.76,-690.4 1597.76,-690.4 1789.76,-690.4 1789.76,-690.4 1795.76,-690.4 1801.76,-696.4 1801.76,-702.4 1801.76,-702.4 1801.76,-761.92 1801.76,-761.92 1801.76,-767.92 1795.76,-773.92 1789.76,-773.92"/>
+<text xml:space="preserve" text-anchor="middle" x="1693.76" y="-746.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Message Queue</text>
+<text xml:space="preserve" text-anchor="middle" x="1693.76" y="-727.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Buffering</text>
+<text xml:space="preserve" text-anchor="middle" x="1693.76" y="-708.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Retries &amp; DLQ</text>
+</g>
+<!-- normalize&#45;&gt;mq -->
+<g id="edge2" class="edge">
+<title>normalize-&gt;mq</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1487.53,-718.24C1487.53,-718.24 1571.23,-718.24 1571.23,-718.24"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1571.23,-722.44 1583.23,-718.24 1571.23,-714.04 1571.23,-722.44"/>
+</g>
+<!-- normalize&#45;&gt;mq -->
+<g id="edge14" class="edge">
+<title>normalize-&gt;mq</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1487.53,-746.08C1487.53,-746.08 1571.23,-746.08 1571.23,-746.08"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1571.23,-750.28 1583.23,-746.08 1571.23,-741.88 1571.23,-750.28"/>
+</g>
+<!-- gpt -->
+<g id="node9" class="node">
+<title>gpt</title>
+<path fill="#082635" stroke="#00d4ff" d="M1489.72,-661.52C1489.72,-661.52 1268.92,-661.52 1268.92,-661.52 1262.92,-661.52 1256.92,-655.52 1256.92,-649.52 1256.92,-649.52 1256.92,-570.8 1256.92,-570.8 1256.92,-564.8 1262.92,-558.8 1268.92,-558.8 1268.92,-558.8 1489.72,-558.8 1489.72,-558.8 1495.72,-558.8 1501.72,-564.8 1501.72,-570.8 1501.72,-570.8 1501.72,-649.52 1501.72,-649.52 1501.72,-655.52 1495.72,-661.52 1489.72,-661.52"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-634.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Azure OpenAI GPT‑4 Turbo</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-614.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Root‑cause analysis</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-595.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Incident classification</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-576.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Remediation steps</text>
+</g>
+<!-- mq&#45;&gt;gpt -->
+<g id="edge15" class="edge">
+<title>mq-&gt;gpt</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1589.16,-690.07C1589.16,-665.73 1589.16,-639.88 1589.16,-639.88 1589.16,-639.88 1516.11,-639.88 1516.11,-639.88"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1516.11,-635.68 1504.11,-639.88 1516.11,-644.08 1516.11,-635.68"/>
+</g>
+<!-- anom -->
+<g id="node11" class="node">
+<title>anom</title>
+<path fill="#082635" stroke="#00d4ff" d="M1475.32,-1023.92C1475.32,-1023.92 1283.32,-1023.92 1283.32,-1023.92 1277.32,-1023.92 1271.32,-1017.92 1271.32,-1011.92 1271.32,-1011.92 1271.32,-952.4 1271.32,-952.4 1271.32,-946.4 1277.32,-940.4 1283.32,-940.4 1283.32,-940.4 1475.32,-940.4 1475.32,-940.4 1481.32,-940.4 1487.32,-946.4 1487.32,-952.4 1487.32,-952.4 1487.32,-1011.92 1487.32,-1011.92 1487.32,-1017.92 1481.32,-1023.92 1475.32,-1023.92"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-996.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Azure Anomaly Detector</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-977.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Baselines</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-958.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Spike detection</text>
+</g>
+<!-- mq&#45;&gt;anom -->
+<g id="edge16" class="edge">
+<title>mq-&gt;anom</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1694.16,-774.19C1694.16,-838.93 1694.16,-955.63 1694.16,-955.63 1694.16,-955.63 1501.79,-955.63 1501.79,-955.63"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1501.79,-951.43 1489.79,-955.63 1501.79,-959.83 1501.79,-951.43"/>
+</g>
+<!-- dedup -->
+<g id="node13" class="node">
+<title>dedup</title>
+<path fill="#2d2607" stroke="#ffd43b" d="M1782.56,-661.32C1782.56,-661.32 1604.96,-661.32 1604.96,-661.32 1598.96,-661.32 1592.96,-655.32 1592.96,-649.32 1592.96,-649.32 1592.96,-609 1592.96,-609 1592.96,-603 1598.96,-597 1604.96,-597 1604.96,-597 1782.56,-597 1782.56,-597 1788.56,-597 1794.56,-603 1794.56,-609 1794.56,-609 1794.56,-649.32 1794.56,-649.32 1794.56,-655.32 1788.56,-661.32 1782.56,-661.32"/>
+<text xml:space="preserve" text-anchor="middle" x="1693.76" y="-633.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Deduplication</text>
+<text xml:space="preserve" text-anchor="middle" x="1693.76" y="-614.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Similarity grouping</text>
+</g>
+<!-- gpt&#45;&gt;dedup -->
+<g id="edge17" class="edge">
+<title>gpt-&gt;dedup</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1501.79,-618.44C1501.79,-618.44 1578.35,-618.44 1578.35,-618.44"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1578.35,-622.64 1590.35,-618.44 1578.35,-614.24 1578.35,-622.64"/>
+</g>
+<!-- idx -->
+<g id="node25" class="node">
+<title>idx</title>
+<path fill="#1f2933" stroke="#868e96" d="M2312.56,-535.32C2312.56,-535.32 2149.36,-535.32 2149.36,-535.32 2143.36,-535.32 2137.36,-529.32 2137.36,-523.32 2137.36,-523.32 2137.36,-483 2137.36,-483 2137.36,-477 2143.36,-471 2149.36,-471 2149.36,-471 2312.56,-471 2312.56,-471 2318.56,-471 2324.56,-477 2324.56,-483 2324.56,-483 2324.56,-523.32 2324.56,-523.32 2324.56,-529.32 2318.56,-535.32 2312.56,-535.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-507.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Search Index</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-488.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Full‑text &amp; semantic</text>
+</g>
+<!-- gpt&#45;&gt;idx -->
+<g id="edge31" class="edge">
+<title>gpt-&gt;idx</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1501.82,-577.9C1737.54,-577.9 2231.16,-577.9 2231.16,-577.9 2231.16,-577.9 2231.16,-549.84 2231.16,-549.84"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2235.36,-549.84 2231.16,-537.84 2226.96,-549.84 2235.36,-549.84"/>
+</g>
+<!-- saf -->
+<g id="node10" class="node">
+<title>saf</title>
+<path fill="#082635" stroke="#00d4ff" d="M1475.32,-910.92C1475.32,-910.92 1283.32,-910.92 1283.32,-910.92 1277.32,-910.92 1271.32,-904.92 1271.32,-898.92 1271.32,-898.92 1271.32,-839.4 1271.32,-839.4 1271.32,-833.4 1277.32,-827.4 1283.32,-827.4 1283.32,-827.4 1475.32,-827.4 1475.32,-827.4 1481.32,-827.4 1487.32,-833.4 1487.32,-839.4 1487.32,-839.4 1487.32,-898.92 1487.32,-898.92 1487.32,-904.92 1481.32,-910.92 1475.32,-910.92"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-883.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Azure AI Content Safety</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-864.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Policy checks</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-845.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Risk filters</text>
+</g>
+<!-- class -->
+<g id="node14" class="node">
+<title>class</title>
+<path fill="#2d2607" stroke="#ffd43b" d="M2052.96,-891.32C2052.96,-891.32 1875.36,-891.32 1875.36,-891.32 1869.36,-891.32 1863.36,-885.32 1863.36,-879.32 1863.36,-879.32 1863.36,-839 1863.36,-839 1863.36,-833 1869.36,-827 1875.36,-827 1875.36,-827 2052.96,-827 2052.96,-827 2058.96,-827 2064.96,-833 2064.96,-839 2064.96,-839 2064.96,-879.32 2064.96,-879.32 2064.96,-885.32 2058.96,-891.32 2052.96,-891.32"/>
+<text xml:space="preserve" text-anchor="middle" x="1964.16" y="-863.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Classification</text>
+<text xml:space="preserve" text-anchor="middle" x="1964.16" y="-844.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Severity &amp; impact</text>
+</g>
+<!-- anom&#45;&gt;class -->
+<g id="edge18" class="edge">
+<title>anom-&gt;class</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1487.49,-970.86C1647.91,-970.86 1930.16,-970.86 1930.16,-970.86 1930.16,-970.86 1930.16,-905.89 1930.16,-905.89"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1934.36,-905.89 1930.16,-893.89 1925.96,-905.89 1934.36,-905.89"/>
+</g>
+<!-- search -->
+<g id="node12" class="node">
+<title>search</title>
+<path fill="#082635" stroke="#00d4ff" d="M1475.32,-1136.92C1475.32,-1136.92 1283.32,-1136.92 1283.32,-1136.92 1277.32,-1136.92 1271.32,-1130.92 1271.32,-1124.92 1271.32,-1124.92 1271.32,-1065.4 1271.32,-1065.4 1271.32,-1059.4 1277.32,-1053.4 1283.32,-1053.4 1283.32,-1053.4 1475.32,-1053.4 1475.32,-1053.4 1481.32,-1053.4 1487.32,-1059.4 1487.32,-1065.4 1487.32,-1065.4 1487.32,-1124.92 1487.32,-1124.92 1487.32,-1130.92 1481.32,-1136.92 1475.32,-1136.92"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-1109.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Azure Cognitive Search</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-1090.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Runbooks</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-1071.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Past incidents</text>
+</g>
+<!-- dedup&#45;&gt;class -->
+<g id="edge3" class="edge">
+<title>dedup-&gt;class</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1795.05,-639.88C1859.21,-639.88 1930.16,-639.88 1930.16,-639.88 1930.16,-639.88 1930.16,-812.69 1930.16,-812.69"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1925.96,-812.69 1930.16,-824.69 1934.36,-812.69 1925.96,-812.69"/>
+</g>
+<!-- route -->
+<g id="node15" class="node">
+<title>route</title>
+<path fill="#2d2607" stroke="#ffd43b" d="M2319.76,-891.32C2319.76,-891.32 2142.16,-891.32 2142.16,-891.32 2136.16,-891.32 2130.16,-885.32 2130.16,-879.32 2130.16,-879.32 2130.16,-839 2130.16,-839 2130.16,-833 2136.16,-827 2142.16,-827 2142.16,-827 2319.76,-827 2319.76,-827 2325.76,-827 2331.76,-833 2331.76,-839 2331.76,-839 2331.76,-879.32 2331.76,-879.32 2331.76,-885.32 2325.76,-891.32 2319.76,-891.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-863.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Auto‑Routing</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-844.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Teams &amp; escalations</text>
+</g>
+<!-- class&#45;&gt;route -->
+<g id="edge4" class="edge">
+<title>class-&gt;route</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2065.41,-848.44C2065.41,-848.44 2115.67,-848.44 2115.67,-848.44"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2115.67,-852.64 2127.67,-848.44 2115.67,-844.24 2115.67,-852.64"/>
+</g>
+<!-- class&#45;&gt;route -->
+<g id="edge19" class="edge">
+<title>class-&gt;route</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2065.41,-869.88C2065.41,-869.88 2115.67,-869.88 2115.67,-869.88"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2115.67,-874.08 2127.67,-869.88 2115.67,-865.68 2115.67,-874.08"/>
+</g>
+<!-- redis -->
+<g id="node23" class="node">
+<title>redis</title>
+<path fill="#1f2933" stroke="#868e96" d="M2312.56,-1001.32C2312.56,-1001.32 2149.36,-1001.32 2149.36,-1001.32 2143.36,-1001.32 2137.36,-995.32 2137.36,-989.32 2137.36,-989.32 2137.36,-949 2137.36,-949 2137.36,-943 2143.36,-937 2149.36,-937 2149.36,-937 2312.56,-937 2312.56,-937 2318.56,-937 2324.56,-943 2324.56,-949 2324.56,-949 2324.56,-989.32 2324.56,-989.32 2324.56,-995.32 2318.56,-1001.32 2312.56,-1001.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-973.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Redis Cache</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-954.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Sessions &amp; rate limits</text>
+</g>
+<!-- class&#45;&gt;redis -->
+<g id="edge30" class="edge">
+<title>class-&gt;redis</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1998.16,-891.52C1998.16,-929.12 1998.16,-986.09 1998.16,-986.09 1998.16,-986.09 2122.83,-986.09 2122.83,-986.09"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2122.83,-990.29 2134.83,-986.09 2122.83,-981.89 2122.83,-990.29"/>
+</g>
+<!-- plan -->
+<g id="node16" class="node">
+<title>plan</title>
+<path fill="#2d2607" stroke="#ffd43b" d="M2590.16,-891.32C2590.16,-891.32 2412.56,-891.32 2412.56,-891.32 2406.56,-891.32 2400.56,-885.32 2400.56,-879.32 2400.56,-879.32 2400.56,-839 2400.56,-839 2400.56,-833 2406.56,-827 2412.56,-827 2412.56,-827 2590.16,-827 2590.16,-827 2596.16,-827 2602.16,-833 2602.16,-839 2602.16,-839 2602.16,-879.32 2602.16,-879.32 2602.16,-885.32 2596.16,-891.32 2590.16,-891.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2501.36" y="-863.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Remediation Planning</text>
+<text xml:space="preserve" text-anchor="middle" x="2501.36" y="-844.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Playbooks &amp; rollback</text>
+</g>
+<!-- route&#45;&gt;plan -->
+<g id="edge5" class="edge">
+<title>route-&gt;plan</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2332.03,-869.88C2332.03,-869.88 2386.29,-869.88 2386.29,-869.88"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2386.29,-874.08 2398.29,-869.88 2386.29,-865.68 2386.29,-874.08"/>
+</g>
+<!-- route&#45;&gt;plan -->
+<g id="edge20" class="edge">
+<title>route-&gt;plan</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2332.03,-848.44C2332.03,-848.44 2386.29,-848.44 2386.29,-848.44"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2386.29,-852.64 2398.29,-848.44 2386.29,-844.24 2386.29,-852.64"/>
+</g>
+<!-- approval -->
+<g id="node17" class="node">
+<title>approval</title>
+<path fill="#30151a" stroke="#ff6b6b" d="M2056.56,-161.32C2056.56,-161.32 1871.76,-161.32 1871.76,-161.32 1865.76,-161.32 1859.76,-155.32 1859.76,-149.32 1859.76,-149.32 1859.76,-109 1859.76,-109 1859.76,-103 1865.76,-97 1871.76,-97 1871.76,-97 2056.56,-97 2056.56,-97 2062.56,-97 2068.56,-103 2068.56,-109 2068.56,-109 2068.56,-149.32 2068.56,-149.32 2068.56,-155.32 2062.56,-161.32 2056.56,-161.32"/>
+<text xml:space="preserve" text-anchor="middle" x="1964.16" y="-133.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Approval Workflow</text>
+<text xml:space="preserve" text-anchor="middle" x="1964.16" y="-114.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Human‑in‑the‑loop</text>
+</g>
+<!-- plan&#45;&gt;approval -->
+<g id="edge21" class="edge">
+<title>plan-&gt;approval</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2468.16,-826.7C2468.16,-760.99 2468.16,-618.44 2468.16,-618.44 2468.16,-618.44 1998.16,-618.44 1998.16,-618.44 1998.16,-618.44 1998.16,-175.76 1998.16,-175.76"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2002.36,-175.76 1998.16,-163.76 1993.96,-175.76 2002.36,-175.76"/>
+</g>
+<!-- dryrun -->
+<g id="node18" class="node">
+<title>dryrun</title>
+<path fill="#30151a" stroke="#ff6b6b" d="M2323.36,-160.32C2323.36,-160.32 2138.56,-160.32 2138.56,-160.32 2132.56,-160.32 2126.56,-154.32 2126.56,-148.32 2126.56,-148.32 2126.56,-108 2126.56,-108 2126.56,-102 2132.56,-96 2138.56,-96 2138.56,-96 2323.36,-96 2323.36,-96 2329.36,-96 2335.36,-102 2335.36,-108 2335.36,-108 2335.36,-148.32 2335.36,-148.32 2335.36,-154.32 2329.36,-160.32 2323.36,-160.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-132.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Dry‑Run Simulation</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-113.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Zero‑risk preview</text>
+</g>
+<!-- approval&#45;&gt;dryrun -->
+<g id="edge6" class="edge">
+<title>approval-&gt;dryrun</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2068.84,-118.11C2068.84,-118.11 2112.03,-118.11 2112.03,-118.11"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2112.03,-122.31 2124.03,-118.11 2112.03,-113.91 2112.03,-122.31"/>
+</g>
+<!-- approval&#45;&gt;dryrun -->
+<g id="edge22" class="edge">
+<title>approval-&gt;dryrun</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2068.84,-139.21C2068.84,-139.21 2112.03,-139.21 2112.03,-139.21"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2112.03,-143.41 2124.03,-139.21 2112.03,-135.01 2112.03,-143.41"/>
+</g>
+<!-- engine -->
+<g id="node19" class="node">
+<title>engine</title>
+<path fill="#30151a" stroke="#ff6b6b" d="M2597.36,-163.92C2597.36,-163.92 2405.36,-163.92 2405.36,-163.92 2399.36,-163.92 2393.36,-157.92 2393.36,-151.92 2393.36,-151.92 2393.36,-92.4 2393.36,-92.4 2393.36,-86.4 2399.36,-80.4 2405.36,-80.4 2405.36,-80.4 2597.36,-80.4 2597.36,-80.4 2603.36,-80.4 2609.36,-86.4 2609.36,-92.4 2609.36,-92.4 2609.36,-151.92 2609.36,-151.92 2609.36,-157.92 2603.36,-163.92 2597.36,-163.92"/>
+<text xml:space="preserve" text-anchor="middle" x="2501.36" y="-136.56" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Execution Engine</text>
+<text xml:space="preserve" text-anchor="middle" x="2501.36" y="-117.36" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Azure CLI, AWS SDK,</text>
+<text xml:space="preserve" text-anchor="middle" x="2501.36" y="-98.16" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">  GCP APIs, Kubernetes</text>
+</g>
+<!-- dryrun&#45;&gt;engine -->
+<g id="edge7" class="edge">
+<title>dryrun-&gt;engine</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2335.51,-138.88C2335.51,-138.88 2378.95,-138.88 2378.95,-138.88"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2378.95,-143.08 2390.95,-138.88 2378.95,-134.68 2378.95,-143.08"/>
+</g>
+<!-- dryrun&#45;&gt;engine -->
+<g id="edge23" class="edge">
+<title>dryrun-&gt;engine</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2335.51,-117.44C2335.51,-117.44 2378.95,-117.44 2378.95,-117.44"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2378.95,-121.64 2390.95,-117.44 2378.95,-113.24 2378.95,-121.64"/>
+</g>
+<!-- audit -->
+<g id="node20" class="node">
+<title>audit</title>
+<path fill="#30151a" stroke="#ff6b6b" d="M2864.16,-154.32C2864.16,-154.32 2679.36,-154.32 2679.36,-154.32 2673.36,-154.32 2667.36,-148.32 2667.36,-142.32 2667.36,-142.32 2667.36,-102 2667.36,-102 2667.36,-96 2673.36,-90 2679.36,-90 2679.36,-90 2864.16,-90 2864.16,-90 2870.16,-90 2876.16,-96 2876.16,-102 2876.16,-102 2876.16,-142.32 2876.16,-142.32 2876.16,-148.32 2870.16,-154.32 2864.16,-154.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2771.76" y="-126.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Audit &amp; Compliance</text>
+<text xml:space="preserve" text-anchor="middle" x="2771.76" y="-107.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Logs, reports, RBAC</text>
+</g>
+<!-- engine&#45;&gt;audit -->
+<g id="edge8" class="edge">
+<title>engine-&gt;audit</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2609.79,-132.88C2609.79,-132.88 2653.15,-132.88 2653.15,-132.88"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2653.15,-137.08 2665.15,-132.88 2653.15,-128.68 2653.15,-137.08"/>
+</g>
+<!-- engine&#45;&gt;audit -->
+<g id="edge24" class="edge">
+<title>engine-&gt;audit</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2609.79,-111.44C2609.79,-111.44 2653.15,-111.44 2653.15,-111.44"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2653.15,-115.64 2665.15,-111.44 2653.15,-107.24 2653.15,-115.64"/>
+</g>
+<!-- cosmos -->
+<g id="node22" class="node">
+<title>cosmos</title>
+<path fill="#1f2933" stroke="#868e96" d="M2312.56,-64.32C2312.56,-64.32 2149.36,-64.32 2149.36,-64.32 2143.36,-64.32 2137.36,-58.32 2137.36,-52.32 2137.36,-52.32 2137.36,-12 2137.36,-12 2137.36,-6 2143.36,0 2149.36,0 2149.36,0 2312.56,0 2312.56,0 2318.56,0 2324.56,-6 2324.56,-12 2324.56,-12 2324.56,-52.32 2324.56,-52.32 2324.56,-58.32 2318.56,-64.32 2312.56,-64.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-36.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Azure Cosmos DB</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-17.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Incidents &amp; config</text>
+</g>
+<!-- engine&#45;&gt;cosmos -->
+<g id="edge28" class="edge">
+<title>engine-&gt;cosmos</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2393.02,-88.2C2317.85,-88.2 2231.16,-88.2 2231.16,-88.2 2231.16,-88.2 2231.16,-78.88 2231.16,-78.88"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2235.36,-78.88 2231.16,-66.88 2226.96,-78.88 2235.36,-78.88"/>
+</g>
+<!-- blob -->
+<g id="node24" class="node">
+<title>blob</title>
+<path fill="#1f2933" stroke="#868e96" d="M2312.56,-273.32C2312.56,-273.32 2149.36,-273.32 2149.36,-273.32 2143.36,-273.32 2137.36,-267.32 2137.36,-261.32 2137.36,-261.32 2137.36,-221 2137.36,-221 2137.36,-215 2143.36,-209 2149.36,-209 2149.36,-209 2312.56,-209 2312.56,-209 2318.56,-209 2324.56,-215 2324.56,-221 2324.56,-221 2324.56,-261.32 2324.56,-261.32 2324.56,-267.32 2318.56,-273.32 2312.56,-273.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-245.96" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Azure Blob Storage</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-226.76" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Logs &amp; snapshots</text>
+</g>
+<!-- engine&#45;&gt;blob -->
+<g id="edge29" class="edge">
+<title>engine-&gt;blob</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M2397.16,-164.11C2397.16,-198.38 2397.16,-241.16 2397.16,-241.16 2397.16,-241.16 2338.87,-241.16 2338.87,-241.16"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2338.87,-236.96 2326.87,-241.16 2338.87,-245.36 2338.87,-236.96"/>
+</g>
+<!-- frontend -->
+<g id="node21" class="node">
+<title>frontend</title>
+<path fill="#182345" stroke="#748ffc" d="M1511.32,-495.82C1511.32,-495.82 1247.32,-495.82 1247.32,-495.82 1241.32,-495.82 1235.32,-489.82 1235.32,-483.82 1235.32,-483.82 1235.32,-328.5 1235.32,-328.5 1235.32,-322.5 1241.32,-316.5 1247.32,-316.5 1247.32,-316.5 1511.32,-316.5 1511.32,-316.5 1517.32,-316.5 1523.32,-322.5 1523.32,-328.5 1523.32,-328.5 1523.32,-483.82 1523.32,-483.82 1523.32,-489.82 1517.32,-495.82 1511.32,-495.82"/>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-468.46" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">React Live Dashboard</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-449.26" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Incidents, timelines</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-430.06" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• WebSocket live updates</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-391.86" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">Analytics &amp; Collaboration</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-372.66" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• MTTR trends, cost insights</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-353.46" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Chat &amp; decision log</text>
+<text xml:space="preserve" text-anchor="middle" x="1379.32" y="-334.26" font-family="Segoe UI" font-size="16.00" fill="#e0e0e0">• Mobile‑friendly UI</text>
+</g>
+<!-- frontend&#45;&gt;class -->
+<g id="edge25" class="edge">
+<title>frontend-&gt;class</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1512.16,-510.36C1512.16,-510.36 1512.16,-859.36 1512.16,-859.36 1512.16,-859.36 1848.89,-859.36 1848.89,-859.36"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1516.36,-510.36 1512.16,-498.36 1507.96,-510.36 1516.36,-510.36"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1848.89,-863.56 1860.89,-859.36 1848.89,-855.16 1848.89,-863.56"/>
+</g>
+<!-- frontend&#45;&gt;plan -->
+<g id="edge26" class="edge">
+<title>frontend-&gt;plan</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1537.78,-393.75C1537.78,-393.75 2535.16,-393.75 2535.16,-393.75 2535.16,-393.75 2535.16,-812.68 2535.16,-812.68"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1537.78,-389.55 1525.78,-393.75 1537.78,-397.95 1537.78,-389.55"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2530.96,-812.68 2535.16,-824.68 2539.36,-812.68 2530.96,-812.68"/>
+</g>
+<!-- frontend&#45;&gt;approval -->
+<g id="edge27" class="edge">
+<title>frontend-&gt;approval</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1379.16,-302.11C1379.16,-302.11 1379.16,-129.16 1379.16,-129.16 1379.16,-129.16 1845.46,-129.16 1845.46,-129.16"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1374.96,-302.11 1379.16,-314.11 1383.36,-302.11 1374.96,-302.11"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="1845.46,-133.36 1857.46,-129.16 1845.46,-124.96 1845.46,-133.36"/>
+</g>
+<!-- frontend&#45;&gt;idx -->
+<g id="edge32" class="edge">
+<title>frontend-&gt;idx</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.4" d="M1523.79,-483.41C1523.79,-483.41 2122.84,-483.41 2122.84,-483.41"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.4" points="2122.84,-487.61 2134.84,-483.41 2122.84,-479.21 2122.84,-487.61"/>
+</g>
+<!-- flow1 -->
+<g id="node26" class="node">
+<title>flow1</title>
+<ellipse fill="#00d4ff" stroke="black" cx="2230.96" cy="-1647.16" rx="48.7" ry="48.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1651.96" font-family="Segoe UI" font-size="16.00" fill="#00111a">1</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1632.76" font-family="Segoe UI" font-size="16.00" fill="#00111a">Alert</text>
+</g>
+<!-- flow2 -->
+<g id="node27" class="node">
+<title>flow2</title>
+<ellipse fill="#00d4ff" stroke="black" cx="2230.96" cy="-1496.16" rx="73.2" ry="73.2"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1500.96" font-family="Segoe UI" font-size="16.00" fill="#00111a">2</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1481.76" font-family="Segoe UI" font-size="16.00" fill="#00111a">Normalize</text>
+</g>
+<!-- flow1&#45;&gt;flow2 -->
+<g id="edge33" class="edge">
+<title>flow1-&gt;flow2</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.6" d="M2231.16,-1598.13C2231.16,-1598.13 2231.16,-1584.03 2231.16,-1584.03"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.6" points="2235.36,-1584.03 2231.16,-1572.03 2226.96,-1584.03 2235.36,-1584.03"/>
+</g>
+<!-- flow3 -->
+<g id="node28" class="node">
+<title>flow3</title>
+<ellipse fill="#00d4ff" stroke="black" cx="2230.96" cy="-1348.16" rx="45.48" ry="45.48"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1352.96" font-family="Segoe UI" font-size="16.00" fill="#00111a">3</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1333.76" font-family="Segoe UI" font-size="16.00" fill="#00111a">AI</text>
+</g>
+<!-- flow2&#45;&gt;flow3 -->
+<g id="edge34" class="edge">
+<title>flow2-&gt;flow3</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.6" d="M2231.16,-1422.59C2231.16,-1422.59 2231.16,-1408.49 2231.16,-1408.49"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.6" points="2235.36,-1408.49 2231.16,-1396.49 2226.96,-1408.49 2235.36,-1408.49"/>
+</g>
+<!-- flow4 -->
+<g id="node29" class="node">
+<title>flow4</title>
+<ellipse fill="#00d4ff" stroke="black" cx="2230.96" cy="-1228.16" rx="45.57" ry="45.57"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1232.96" font-family="Segoe UI" font-size="16.00" fill="#00111a">4</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1213.76" font-family="Segoe UI" font-size="16.00" fill="#00111a">Plan</text>
+</g>
+<!-- flow3&#45;&gt;flow4 -->
+<g id="edge35" class="edge">
+<title>flow3-&gt;flow4</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.6" d="M2231.16,-1302.45C2231.16,-1302.45 2231.16,-1288.56 2231.16,-1288.56"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.6" points="2235.36,-1288.56 2231.16,-1276.56 2226.96,-1288.56 2235.36,-1288.56"/>
+</g>
+<!-- flow5 -->
+<g id="node30" class="node">
+<title>flow5</title>
+<ellipse fill="#00d4ff" stroke="black" cx="2230.96" cy="-1092.16" rx="61.89" ry="61.89"/>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1096.96" font-family="Segoe UI" font-size="16.00" fill="#00111a">5</text>
+<text xml:space="preserve" text-anchor="middle" x="2230.96" y="-1077.76" font-family="Segoe UI" font-size="16.00" fill="#00111a">Execute</text>
+</g>
+<!-- flow4&#45;&gt;flow5 -->
+<g id="edge36" class="edge">
+<title>flow4-&gt;flow5</title>
+<path fill="none" stroke="#00d4ff" stroke-width="1.6" d="M2231.16,-1182.12C2231.16,-1182.12 2231.16,-1168.74 2231.16,-1168.74"/>
+<polygon fill="#00d4ff" stroke="#00d4ff" stroke-width="1.6" points="2235.36,-1168.74 2231.16,-1156.74 2226.96,-1168.74 2235.36,-1168.74"/>
+</g>
+<!-- metrics -->
+<g id="node31" class="node">
+<title>metrics</title>
+<polygon fill="#0c1e2e" stroke="#00d4ff" points="408.22,-921.12 256.58,-921.12 256.58,-823.2 414.22,-823.2 414.22,-915.12 408.22,-921.12"/>
+<polyline fill="none" stroke="#00d4ff" points="408.22,-921.12 408.22,-915.12"/>
+<polyline fill="none" stroke="#00d4ff" points="414.22,-915.12 408.22,-915.12"/>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-897.36" font-family="Segoe UI" font-size="12.00" fill="#e0e0e0">Detection: 4.2 s</text>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-882.96" font-family="Segoe UI" font-size="12.00" fill="#e0e0e0">Analysis: 6.1 s</text>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-868.56" font-family="Segoe UI" font-size="12.00" fill="#e0e0e0">Automation: 87 %</text>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-854.16" font-family="Segoe UI" font-size="12.00" fill="#e0e0e0">AI Accuracy: 94 %</text>
+<text xml:space="preserve" text-anchor="middle" x="335.4" y="-839.76" font-family="Segoe UI" font-size="12.00" fill="#e0e0e0">TTR Improvement: 75 %</text>
+</g>
+<!-- metrics&#45;&gt;datadog -->
+</g>
+</svg>

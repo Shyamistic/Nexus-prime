@@ -8,6 +8,8 @@
 
 > **The world's first autonomous incident response platform that resolves critical incidents in 6 seconds using AI-powered root cause analysis.**
 
+Live Deployed link on azure: (https://white-river-06eae7700.2.azurestaticapps.net/)
+Swagger API: (https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io/docs#/)
 ## 🎯 Problem Statement
 
 **Traditional incident response is broken:**
