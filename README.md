@@ -11,6 +11,7 @@
 Live Deployed link on azure: (https://white-river-06eae7700.2.azurestaticapps.net/)
 Swagger API: (https://nexus-backend.nicesea-d905a880.centralindia.azurecontainerapps.io/docs#/)
 HowtoLogin : (https://github.com/Shyamistic/Nexus-prime/blob/main/howtologin.md)
+ResearchPaper(Currenly under review for COMPSAC2026): (https://github.com/Shyamistic/Nexus-prime/blob/main/COMPSAC_2026_paper_1333.pdf)
 ## 🎯 Problem Statement
 
 **Traditional incident response is broken:**
